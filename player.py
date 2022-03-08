@@ -1,6 +1,6 @@
 import pygame
 from colours import *
-from main import *
+from characteristics import *
 
 
 class Player(pygame.sprite.Sprite):
@@ -10,7 +10,7 @@ class Player(pygame.sprite.Sprite):
         self.image = pygame.Surface((self.w, self.h))
         self.color = GREEN
         self.image.fill(self.color)
-        self.speed = 1
+        self.speed = 2
         self.rect = self.image.get_rect()
         self.rect.centerx = W/2
         self.rect.centery = H/2
