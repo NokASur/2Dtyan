@@ -1,0 +1,20 @@
+Work status:
+================================================================
+"+" = Done
+"+-" = Partially done
+"?" = In test
+"$" = Not started yet
+"-" = Too hard for now or not that important
+================================================================
+
+Things to do:
+================================================================
+Basic grid +
+Enemy and player's sprites +
+Chasing AI +-
+Artillery AI $
+Spawner AI $
+Shooting mechanics $
+Collision checking $
+Death mechanic $
+================================================================
