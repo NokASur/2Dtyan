@@ -2,6 +2,7 @@ import pygame, time
 from player import *
 from colours import *
 from characteristics import *
+from enemy import *
 
 fpsClock = pygame.time.Clock()
 pygame.init()
@@ -12,10 +13,13 @@ inGame = True
 
 all_sprites = pygame.sprite.Group()
 
-new_rect = Player()
+player_sprite = Player()
+enemy_sprite = Enemy("assault_troop", 100, 100)
+enemy_sprite1 = Enemy("assault_troop", 700, 700)
 
-all_sprites.add(new_rect)
-
+all_sprites.add(player_sprite)
+all_sprites.add(enemy_sprite)
+all_sprites.add(enemy_sprite1)
 
 matrix = []
 for y in range(int(W / PG_Width)):
@@ -30,7 +34,7 @@ while inGame:
         if event.type == pygame.QUIT:
             inGame = False
 
-    screen.fill(BLACK)
+    screen.fill(SLIGHT_YELLOW)
 
     for y in range(int(W / PG_Width)):
         for x in range(int(W / PG_Width)):
