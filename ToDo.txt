@@ -11,9 +11,9 @@ Things to do:
 ================================================================
 Basic grid +
 Enemy and player's sprites +
-Chasing AI +-
-Artillery AI $
-Spawner AI $
+Chasing AI +
+Artillery AI +
+Spawner AI +-
 Shooting mechanics $
 Collision checking $
 Death mechanic $
