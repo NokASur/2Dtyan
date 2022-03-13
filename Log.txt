@@ -8,3 +8,8 @@ Player movement.
 Grid improvements.
 Enemy spawn.
 Basic chasing enemy AI.
+
+13.02.22 v0.2.1
+
+New AI types
+
