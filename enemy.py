@@ -26,5 +26,13 @@ class Enemy(pygame.sprite.Sprite):
                                             self.rect.centerx, self.rect.centery)
         self.fractional_x += x_change
         self.fractional_y += y_change
+        if self.fractional_y <= 0:
+            self.fractional_y = 1
+        if self.fractional_y >= H:
+            self.fractional_y = H - 1
+        if self.fractional_x <= 0:
+            self.fractional_x = 1
+        if self.fractional_x >= W:
+            self.fractional_x = W - 1
         self.rect.centerx = ceil(self.fractional_x)
         self.rect.centery = ceil(self.fractional_y)
