@@ -1,7 +1,7 @@
 import pygame
 from colours import *
 # from characteristics import *
-from AI import *
+from ai import *
 
 
 class Enemy(pygame.sprite.Sprite):
